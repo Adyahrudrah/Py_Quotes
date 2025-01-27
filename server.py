@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Function to fetch a quote from an API
 def get_quote():
     try:
-        response = requests.get("https://api.quotable.io/random")
+        response = requests.get("http://api.quotable.io/random")
         if response.status_code == 200:
             data = response.json()
             return {
